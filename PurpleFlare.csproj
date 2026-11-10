@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+        <GenerateDependencyFile>false</GenerateDependencyFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>G:\Steam\steam\steamapps\common\RimWorld\Mods\PurpleFlare\1.6\Assemblies\</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="0Harmony">
+        <HintPath>G:\Steam\steam\steamapps\workshop\content\294100\2009463077\1.6\Assemblies\0Harmony.dll</HintPath>
+      </Reference>
+      <Reference Include="AlienRace">
+        <HintPath>G:\Steam\steam\steamapps\workshop\content\294100\839005762\1.6\Assemblies\AlienRace.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+      <Reference Include="Assembly-CSharp">
+          <HintPath>G:\Steam\steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+      <Reference Include="UnityEngine">
+        <HintPath>G:\Steam\steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+      <Reference Include="UnityEngine.CoreModule">
+        <HintPath>G:\Steam\steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+      <Reference Include="Wolfein">
+          <HintPath>G:\Steam\steam\steamapps\workshop\content\294100\3473140562\1.6\Assemblies\Wolfein.dll</HintPath>
+          <Private>false</Private>
+      </Reference>
+    </ItemGroup>
+
+</Project>
